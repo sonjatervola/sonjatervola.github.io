@@ -364,12 +364,93 @@ footer {
 
 /* Responsive design */
 @media (max-width: 768px) {
-    nav ul li {
-        margin: 5px 10px;
+    /* Navigation improvements */
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
     }
     
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    nav ul li {
+        margin: 5px 8px;
+    }
+    
+    nav ul li a {
+        padding: 6px 10px;
+        font-size: 0.9em;
+    }
+    
+    /* Profile section mobile layout */
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 15px;
+    }
+    
+    .profile-image {
+        width: 250px !important;
+        height: 300px !important;
+        margin: 0 auto 20px auto;
+    }
+    
+    .text-content {
+        margin-left: 0;
+        align-items: center;
+    }
+    
+    .research-interests {
+        font-size: 1em;
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .academic-links {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .academic-link {
+        font-size: 1em;
+        padding: 12px 20px;
+        text-align: center;
+        width: fit-content;
+    }
+    
+    /* Section improvements */
+    .home-section {
+        padding: 30px 15px;
+    }
+    
+    .home-section h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    .publication, .outreach-item, .news-item {
+        width: 95%;
+        padding: 20px 15px;
+        margin: 20px auto;
+    }
+    
+    .news-preview {
+        padding: 20px 15px;
+    }
+    
+    .contact-info {
+        padding: 20px 15px;
+    }
+    
+    /* Banner improvements */
     .banner {
-        padding: 30px 20px;
+        padding: 30px 15px;
+        text-align: center;
     }
     
     .home-link {
@@ -380,17 +461,99 @@ footer {
         font-size: 1em;
     }
     
-    .publication, .outreach-item, .news-item {
-        width: 90%;
-        padding: 20px;
-    }
-    
+    /* Header improvements */
     header {
-        padding: 60px 20px;
+        padding: 60px 15px;
+        text-align: center;
     }
     
     header h1 {
         font-size: 2em;
+    }
+    
+    /* Button improvements */
+    .button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+        width: fit-content;
+    }
+    
+    /* Publication list improvements */
+    .publication-list p {
+        font-size: 0.9em;
+        line-height: 1.5;
+        margin: 15px 0;
+    }
+    
+    .publication-link {
+        word-break: break-word;
+    }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 0 10px;
+    }
+    
+    nav ul li {
+        margin: 3px 5px;
+    }
+    
+    nav ul li a {
+        padding: 5px 8px;
+        font-size: 0.8em;
+    }
+    
+    .profile-image {
+        width: 200px !important;
+        height: 250px !important;
+    }
+    
+    .research-interests {
+        font-size: 0.9em;
+        padding: 0 10px;
+    }
+    
+    .academic-link {
+        font-size: 0.9em;
+        padding: 10px 15px;
+    }
+    
+    .home-section {
+        padding: 20px 10px;
+    }
+    
+    .home-section h2 {
+        font-size: 1.3em;
+    }
+    
+    .publication, .outreach-item, .news-item {
+        width: 98%;
+        padding: 15px 10px;
+    }
+    
+    .banner {
+        padding: 20px 10px;
+    }
+    
+    .home-link {
+        font-size: 1.4em;
+    }
+    
+    header {
+        padding: 40px 10px;
+    }
+    
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    .publication-list p {
+        font-size: 0.8em;
     }
 }
 
